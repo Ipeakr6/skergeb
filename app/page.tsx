@@ -328,7 +328,7 @@ const slides: SlideData[] = [
   },
   {
     id: 18,
-    title: "Micha hat es wirklich sehr gut gefallen.",
+    title: "Micha gefällt das.",
     likes: 20,
     lines: [
       {

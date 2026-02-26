@@ -100,7 +100,7 @@ export default function Slide({
       className={`relative h-dvh snap-start flex items-center justify-center ${slide.theme.bg}`}
     >
       {/* TikTok-like Action Bar rechts */}
-      <div className="absolute bottom-30 right-6 flex flex-col items-center gap-3 z-20">
+      <div className="absolute bottom-6 right-6 flex flex-col items-center gap-3 z-20">
         <button
           onClick={toggleLike}
           className="rounded-full bg-white/10 backdrop-blur border border-white/15 p-3 active:scale-95 transition"
