@@ -98,6 +98,13 @@ export default function Slide({
     <section
       ref={ref}
       className={`relative h-dvh snap-start flex items-center justify-center ${slide.theme.bg}`}
+      onTouchEnd={onDoubleTap}
+      onDoubleClick={() => {
+        setLiked((prevLiked) => {
+          if (!prevLiked) setLikes((l) => l + 1);
+          return true;
+        });
+      }}
     >
       {/* TikTok-like Action Bar rechts */}
       <div className="absolute bottom-6 right-6 flex flex-col items-center gap-3 z-20">
@@ -130,13 +137,6 @@ export default function Slide({
         }}
         transition={{ duration: 0.35, ease: "easeOut" }}
         className={`w-full ${slide.theme.border}`}
-        onTouchEnd={onDoubleTap}
-        onDoubleClick={() => {
-          setLiked((prevLiked) => {
-            if (!prevLiked) setLikes((l) => l + 1);
-            return true;
-          });
-        }}
       >
         <h2 className={`text-5xl text-center font-bold ${slide.theme.title}`}>
           {slide.title}
@@ -165,7 +165,7 @@ export default function Slide({
                       alt={line.alt || ""}
                       width={1200}
                       height={800}
-                      className="h-auto w-full object-cover"
+                      className="h-auto max-h-[80vh] w-full object-cover"
                       priority={slide.id === 1}
                     />
                   </div>
@@ -187,7 +187,7 @@ export default function Slide({
 
               return (
                 <figure key={idx} className="mt-4">
-                  <div className="overflow-hidden">
+                  <div className="overflow-hidden max-h-[80vh]">
                     <video
                       src={line.src}
                       poster={line.poster}
