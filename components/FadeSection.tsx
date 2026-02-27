@@ -165,7 +165,7 @@ export default function Slide({
                       alt={line.alt || ""}
                       width={1200}
                       height={800}
-                      className="h-auto max-h-[80vh] w-full object-cover"
+                      className="h-auto max-h-[75vh] w-full object-cover"
                       priority={slide.id === 1}
                     />
                   </div>
@@ -187,7 +187,7 @@ export default function Slide({
 
               return (
                 <figure key={idx} className="mt-4">
-                  <div className="overflow-hidden max-h-[80vh]">
+                  <div className="overflow-hidden max-h-[75vh]">
                     <video
                       src={line.src}
                       poster={line.poster}
