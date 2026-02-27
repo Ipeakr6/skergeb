@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Scroll Fade Demo",
-  description: "Next.js + Tailwind scroll fade in/out demo",
+  title: "Chris du geiler Ochse",
+  description: "Alles Gute von Jonas",
 };
 
 export default function RootLayout({
