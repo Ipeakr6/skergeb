@@ -390,7 +390,7 @@ const slides: SlideData[] = [
     title: "Kuss, das war´s",
     likes: 0,
     lines: [
-      "Mein liebster Chris Junge, ich freu mich viele neue Momente mit dir.",
+      "Mein liebster Chris Junge, ich freu mich auf viele neue Momente mit dir.",
       "Zum Abschluss noch ein Zitat: Wat isn jetzt nu mit ficken?",
       "Dein Jonas",
     ],
